@@ -62,8 +62,23 @@ Responsive UI - Mobile-friendly design using Tailwind CSS.
 ## TO run the Project
     npm run dev
 
-## Authentication (Mock)
+ ## Authentication (Mock)
 
 The authentication system does not use a backend.
 Users "log in" by clicking a Login button.
 The app stores authentication state using Redux.
+
+ ###  Describe the Issue Clearly (please read this )
+
+During the development of my React To-Do application, I integrated the OpenWeatherMap API to fetch real-time weather data. However, when testing the API request, I encountered a 401 Unauthorized error, indicating an invalid API key.
+
+Initially, I assumed there might be an issue with my API request or the way I was storing and accessing the API key in my .env file. I went through these debugging steps:"
+
+✔️ Checked my API request URL in the browser to verify correctness.
+✔️ Confirmed that my API key was correctly stored in the .env file and accessed using import.meta.env.VITE_WEATHER_API_KEY.
+✔️ Ensured my Vite server was restarted after modifying .env (as environment variables don't update dynamically).
+✔️ Looked into OpenWeatherMap’s API documentation to verify key usage and permissions.
+
+After verifying everything in my code, I realized that the issue was not with my implementation, but with the API key propagation. When registering a new API key, OpenWeatherMap takes some time to fully activate it across their servers. This means that even though the key appears active in my account, it may not work immediately for API requests.
+
+
