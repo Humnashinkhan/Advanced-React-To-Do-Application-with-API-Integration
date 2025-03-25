@@ -27,6 +27,7 @@ src/
 │   ├── TaskList.jsx
 
 │── pages/
+
 │   ├── Home.jsx 
 
 │   ├── TaskPage.jsx  
@@ -34,6 +35,7 @@ src/
 │   ├── Login.jsx 
 
 │── redux/
+
 │   ├── store.js
 
 │   ├── taskSlice.js
