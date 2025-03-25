@@ -19,19 +19,31 @@ This is an **Advanced To-Do Application** built with **React, Redux, Tailwind CS
 
 src/
 │── components/
+
 │   ├── Navbar.jsx
+
 │   ├── TaskInput.jsx
+
 │   ├── TaskList.jsx
+
 │── pages/
 │   ├── Home.jsx 
+
 │   ├── TaskPage.jsx  
-│   ├── Login.jsx  
+
+│   ├── Login.jsx 
+
 │── redux/
 │   ├── store.js
+
 │   ├── taskSlice.js
+
 │   ├── authSlice.js
+
 │── App.jsx
+
 │── main.jsx
+
 │── index.css
 
 ## Features
